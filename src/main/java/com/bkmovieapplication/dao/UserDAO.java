@@ -11,7 +11,7 @@ public class UserDAO {
     Connection conn = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
-    String dbquery = "moviedb";//oj3bOO0Agn
+    String dbquery = "oj3bOO0Agn";//oj3bOO0Agn
 
     public void create(String username, String email, String password, String phonenum) {
         String query = "insert into " + dbquery + ".user (	\n"

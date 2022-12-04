@@ -17,7 +17,7 @@ public class MovieDAO {
     Connection conn = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
-    String dbquery = "moviedb";//oj3bOO0Agn
+    String dbquery = "oj3bOO0Agn";//oj3bOO0Agn
 
     public List<Movie> getCategoryMovie(String category) {
         List<Movie> List = new ArrayList<>();

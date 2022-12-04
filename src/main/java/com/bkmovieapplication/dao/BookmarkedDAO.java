@@ -18,7 +18,7 @@ public class BookmarkedDAO {
     PreparedStatement ps = null;
     ResultSet rs = null;
     
-    String dbquery = "moviedb";//oj3bOO0Agn
+    String dbquery = "oj3bOO0Agn";//oj3bOO0Agn
 
     public List<Bookmarked> getALLBookmarked() {
         List<Bookmarked> List = new ArrayList<>();

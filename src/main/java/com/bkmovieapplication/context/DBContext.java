@@ -8,37 +8,10 @@ import javax.servlet.jsp.tagext.TryCatchFinally;
 public class DBContext {
 
     public Connection getConnection() throws Exception {
-        /*Connection conn = null;
-        try {
-            String url = "jdbc:sqlserver://" + serverName + ":"+portNumber + "\\" + instance + ";databaseName="
-                    + dbName;
-            if (instance == null || instance.trim().isEmpty())
-                url = "jdbc:sqlserver://" + serverName + ":"+portNumber + ";databaseName=" + dbName;
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            conn = DriverManager.getConnection(url, userID, password);
-            System.out.println("Connected");
-        } catch (Exception ex) {
-            System.out.println("Connect failure!");
-            ex.printStackTrace();
-        }
-
-        return conn;*/
         
-//        final String url = "jdbc:mysql://remotemysql.com:3306/oj3bOO0Agn";
-//        final String user = "oj3bOO0Agn";
-//        final String password = "ptIj0LrRVx";
-//        try {
-//            Class.forName("com.mysql.jdbc.Driver");
-//            return DriverManager.getConnection(url, user, password);
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return null;
- final String url = "jdbc:mysql://localhost:3306/moviedb";
-        final String user = "root";
-        final String password = "12345";
+        final String url = "jdbc:mysql://remotemysql.com:3306/oj3bOO0Agn";
+        final String user = "oj3bOO0Agn";
+        final String password = "ptIj0LrRVx";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             return DriverManager.getConnection(url, user, password);
@@ -48,6 +21,20 @@ public class DBContext {
             e.printStackTrace();
         }
         return null;
+
+
+// final String url = "jdbc:mysql://localhost:3306/moviedb";
+//        final String user = "root";
+//        final String password = "12345";
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            return DriverManager.getConnection(url, user, password);
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return null;
     }
 
     /* Insert your other code right after this comment */
