@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.total {
+    display: flex;
+    height: 100vh;
+}
+
+/* COL LEFT */
+
+.colLeft {
+    width: 5.5%;
+    background-color: #1c1c1e;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.colLeft_logo {
+    height: 45px;
+    margin: 0;
+}
+.colLeft_logo img {
+    height: 40px;
+}
+.colLeft_extension {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    justify-content: space-between;
+}
+.colLeft_extension svg {
+    color: gray;
+}
+.colLeft_extension a:hover {
+    color: white;
+}
+.colLeft_extension a:hover svg{
+    color: white;
+    transition: all .5s;
+}
+.colLeft_user {
+    height: 45px;
+    margin: 0;
+}
+.colLeft_user img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* COL CENTER  */
+
+.colCenter {
+    background-color: #1c1c1e;
+    width: 68.5%;
+    margin-left: 5.5%;
+    padding: 2.75rem 2vw 0 2vw;
+    height: fit-content;
+}
+.colCenter .video_movie{
+    width: 100%;
+    height: 530px;
+    background-color: #2929ac;
+}
+.colCenter .title_movie{
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.colCenter .title_movie .title{
+    cursor: pointer;
+    display: inline-block;
+}
+.colCenter .title_movie .title:hover{
+    color: rgb(189, 184, 184);
+    transition: all .5s;
+}
+.colCenter .star_calender{
+    color: gray;
+    margin-bottom: 15px;
+}
+.colCenter .star_calender svg{
+    color: #5179FF!important;
+}
+.colCenter .type_movie{
+    margin-bottom: 1.5rem;
+}
+.colCenter .type_movie span{
+    
+    color: rgb(142, 140, 140);
+    background-color: #333335;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.colCenter .type_movie span:hover{
+    background-color: #262628;
+    transition: all .5s;
+}
+.colCenter .overview .title{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.colCenter .overview .content{
+    color: rgb(142, 140, 140);
+    font-size: 1.1rem;
+}
+.colCenter .overview .content span{
+    font-style: italic;
+}
+.colCenter .overview .content span:hover{
+    cursor: pointer;
+    color: rgb(109, 107, 107);
+    transition: all .5s;
+}
+.colCenter .comments{
+    margin-top: 2rem;
+}
+.colCenter .comments .comments_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.colCenter .comments .comments_title .title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+.colCenter .comments .comments_title .title::after{
+    content: '1';
+    color: rgb(142, 140, 140);
+    background-color: #333335;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    text-align: center;
+    position: absolute;
+    right: -27px;
+    top: -4px;
+}
+.colCenter .comments .comments_title .latest_popular{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(109, 107, 107);
+}
+.colCenter .comments .comments_title .latest_popular .latest{
+    padding: 4px 8px;
+    border-right: 1px solid rgb(44, 43, 43);
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border: 1px solid rgb(44, 43, 43);
+    cursor: pointer;
+}
+
+.colCenter .comments .comments_title .latest_popular .popular{
+    padding: 4px 8px;
+    border: 1px solid rgb(44, 43, 43);
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    cursor: pointer;
+}
+.colCenter .comments .comments_title .latest_popular .active{
+    color: white;
+    background-color: #333335;
+    
+}
+.colCenter .comments .comments_title .latest_popular .no_active:hover{
+    color: white;
+    transition: all .5s;
+}
+.colCenter .comments .login_to_comment{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: rgb(109, 107, 107);
+    font-size: 18px;
+    text-align: center;
+}
+.colCenter .comments .login_to_comment span{
+    cursor: pointer;
+    font-weight: 500;
+    color: #5179FF;
+}
+.colCenter .comments .login_to_comment span:hover{
+    color: #2d54d6;
+    transition: all .5s;
+}
+
+/* COL RIGHT */
+
+.colRight {
+    width: 26%;
+    box-sizing: border-box;
+    background-color: #1c1c1e;
+    border-right: 1px solid #2c2c2e;
+    padding: 37px 32px 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+.search_bar form {
+    background-color: #333335;
+    padding: 12px;
+    border-radius: 30px;
+}
+.search_bar .button_search {
+    background-color: #333335;
+    border: none;
+    color: white;
+}
+.search_bar .button_search:hover svg {
+    color: white !important;
+    transition: all 0.5s;
+}
+.search_bar .input_search {
+    background-color: #333335;
+    border: none;
+    color: white;
+    padding: 0;
+    width: 254px;
+}
+.search_bar .input_search:focus {
+    outline: none;
+    border: none;
+}
+.popular_content {
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.popular_content span {
+    padding: 0.4rem 0.9rem;
+    background-color: #333335;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.popular_content span:hover {
+    background-color: #282829;
+    transition: all 0.5s;
+}
+.colRight .similar .similar_title {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.colRight .similar .similar_title span {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.colRight .similar .similar_title svg {
+    color: rgb(110, 106, 106);
+}
+.colRight .similar_content {
+    margin-top: 20px;
+}
+.colRight .similar_content .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.colRight .similar_content .content .image {
+    width: 29%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.colRight .similar_content .content .image .image_cover{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+}
+
+/* Chỉnh hover vào item movie */
+
+.colRight .similar_content .content:hover{
+    cursor: pointer;
+}
+.colRight .similar_content .content:hover .image .image_cover{
+    background-color: rgba(0, 0, 0, 0.183);
+    transition: all .5s;
+}
+.colRight .similar_content .content:hover .text .title{
+    color: rgb(187, 183, 183);
+    transition: all .5s;
+}
+.colRight .similar_content .content:hover .text .date{
+    color: #7b7878;
+    transition: all .5s;
+}
+.colRight .similar_content .content:hover .text .star{
+    color: #4062d2;
+    transition: all .5s;
+}
+
+
+.colRight .similar_content .content .image img {
+    height: 100%;
+}
+.colRight .similar_content .content .text {
+    width: 62%;
+}
+.colRight .similar_content .content .text .title {
+    margin: 0 0 12px 0;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+.colRight .similar_content .content .text .date {
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-bottom: 25px;
+}
+.colRight .similar_content .content .text .star {
+    padding: 1px 6px;
+    border-radius: 20px;
+    border: 1px solid #5179ff;
+    color: #5179ff;
+    font-size: 16px;
+}
+.colRight .seeMore {
+    width: 100%;
+    padding: 6px 0;
+    margin-top: 10px;
+    border: none;
+    background-color: #333335;
+    color: rgb(145, 142, 142);
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.colRight .seeMore:hover {
+    background-color: #282829;
+    transition: all 0.5s;
+}
